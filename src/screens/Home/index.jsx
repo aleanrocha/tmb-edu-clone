@@ -1,4 +1,9 @@
 import { Fragment } from 'react'
+
+import tmbAboutDesktop from '../../assets/tmb-about.png'
+import tmbCode from '../../assets/tmb-code-about.png'
+import tmbSuperCode from '../../assets/tmb-super-code.png'
+
 import { Header } from '../../components/Header'
 
 export const Home = () => {
@@ -26,9 +31,48 @@ export const Home = () => {
           </div>
         </div>
       </section>
-      <main>
-        <h1>Hello World</h1>
-      </main>
+      <section
+        className="bg-tmb-about-m lg:bg-none bg-no-repeat py-8 mt-10 h-112"
+        style={{ backgroundPosition: '50% 0' }}
+      >
+        <div className="max-w-96 lg:max-w-screen-lg px-4 mx-auto lg:flex items-center justify-center gap-24">
+          <img
+            src={tmbAboutDesktop}
+            alt="Imagem de uma mulher segurando um cartão"
+            className="hidden lg:block"
+          />
+          <div className="pt-96 lg:pt-0 flex flex-col gap-6">
+            <h2 className="text-3xl tracking-wider max-w-96">
+              Que tal dar mais acesso ao seu infoproduto?
+            </h2>
+            <p className="opacity-50 leading-7">
+              Para ter mais resultado, tudo o que você precisar fazer é dar
+              oportunidade a quem precisa. Muitas pessoas gostariam de comprar o
+              seu infoproduto, mas são conseguem por conta de meios de
+              pagamentos engessados. No Brasil, 78% da população está endividada
+              e o limite médio do cartão de crédito é R$1.400,00.
+            </p>
+            <p className="opacity-50 leading-7">
+              Por isso, um público muito grande é deixado de lado, seja por não
+              ter crédito ou não poder comprometer o seu limite. Mas quando
+              existe uma forma de pagamento parcelada e facilitada, você vai
+              mais longe. O boleto parcelado dá oportunidade a essas pessoas que
+              querem acesso ao aprendizado e traz mais faturamento para o seu
+              bolso!
+            </p>
+            <img
+              src={tmbCode}
+              alt="Imagem de um código de barras"
+              className="max-w-64"
+            />
+          </div>
+        </div>
+        <img
+          src={tmbSuperCode}
+          alt="Imagem de um código de barras gigante"
+          className="hidden lg:flex max-w-96 lg:max-w-screen-lg lg:my-20 lg:mx-auto "
+        />
+      </section>
     </Fragment>
   )
 }
