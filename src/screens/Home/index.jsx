@@ -3,6 +3,9 @@ import { Fragment } from 'react'
 import tmbAboutDesktop from '../../assets/tmb-about.png'
 import tmbCode from '../../assets/tmb-code-about.png'
 import tmbSuperCode from '../../assets/tmb-super-code.png'
+import tmbIconLaptop from '../../assets/tmb-icon-laptop.svg'
+import tmbIconMoney from '../../assets/tmb-icon-money.svg'
+import tmbIconRocket from '../../assets/tmb-icon-rocket.svg'
 
 import { Header } from '../../components/Header'
 
@@ -72,6 +75,36 @@ export const Home = () => {
           alt="Imagem de um código de barras gigante"
           className="hidden lg:flex max-w-96 lg:max-w-screen-lg lg:my-20 lg:mx-auto "
         />
+      </section>
+      <section className="mt-8 mb-36">
+        <div className="max-w-96 lg:max-w-screen-lg px-4 mx-auto flex flex-col gap-12 lg:gap-28">
+          <h2 className='text-left text-2xl lg:text-3xl'>O que tem mais com a <br /> TMB?</h2>
+          <div className="flex flex-col lg:flex-row gap-12">
+            <div className='flex flex-col gap-4 items-start'>
+              <img src={tmbIconLaptop} alt="Icone de laptop" className='lg:mx-auto'/>
+              <h3 className='text-2xl'>MAIS ACESSO</h3>
+              <p className="opacity-50 leading-7">
+                Não poder acessar algo que pode mudar o rumo de nossas vidas é
+                muito frustrante. Por isso a TMB oferece crédito para quem
+                aposta no digital para se reinventar e crescer.
+              </p>
+            </div>
+            <div className='flex flex-col gap-4 items-start'>
+              <img src={tmbIconMoney} alt="Icone de dinheiro" className='lg:mx-auto' />
+              <h3 className='text-2xl'>MAIS RESULTADO</h3>
+              <p className="opacity-50 leading-7">
+              Todo negócio que se preze visa o máximo de retorno. E que tal dobrar o faturamento de seus lançamentos e infoprodutos fazendo uso do boleto? Então conte com a gente!
+              </p>
+            </div>
+            <div className='flex flex-col gap-4 items-start'>
+              <img src={tmbIconRocket} alt="Icone de foguete" className='lg:mx-auto' />
+              <h3 className='text-2xl'>MAIS AGILIDADE</h3>
+              <p className="opacity-50 leading-7">
+              Dentro da nossa plataforma, você tem autonomia para criar ofertas e realizar diversos processos. Dessa forma, você ganha agilidade dentro do seu próprio processo.
+              </p>
+            </div>
+          </div>
+        </div>
       </section>
     </Fragment>
   )
