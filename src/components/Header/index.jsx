@@ -2,8 +2,8 @@ import logoTMB from '../../assets/tmb-logo-dark.png'
 
 export const Header = () => {
   return (
-    <header className="flex justify-center p-4">
-      <section className="flex justify-center lg:justify-around w-full max-w-screen-xl">
+    <header className="flex justify-center py-4">
+      <section className="flex justify-center lg:justify-between w-full">
         <img src={logoTMB} alt="Logo da TMB" className="hidden lg:block" />
         <div className="flex flex-col items-center gap-2 lg:flex-row-reverse lg:gap-8">
           <div className="flex gap-1 lg:gap-8">
@@ -21,8 +21,8 @@ export const Header = () => {
             </a>
           </div>
           <div className="flex items-center justify-between gap-4">
-            <img src={logoTMB} alt="Logo da TMB" className="w-24 lg:hidden" />
-            <nav className="flex gap-2 opacity-80 lg:text-xl lg:gap-8">
+            <img src={logoTMB} alt="Logo da TMB" className="w-20 lg:hidden" />
+            <nav className="flex gap-2 opacity-80 text-sm tracking-widest lg:text-lg lg:gap-8">
               <a href="#">Quem somos</a>
               <a href="#">Soluções</a>
               <a href="#">Contato</a>
