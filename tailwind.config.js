@@ -17,6 +17,10 @@ export default {
         'tmb-dark-blue': '#000870',
         'tmb-highlight': '#33cccc',
         'tmb-yellow': '#edc741'
+      },
+      backgroundImage: {
+        'tmb-banner-home-m': 'url("./src/assets/tmb-banner-mobile.png")',
+        'tmb-banner-home': 'url("./src/assets/tmb-banner-home.png")'
       }
     },
   },
