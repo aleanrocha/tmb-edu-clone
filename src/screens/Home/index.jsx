@@ -8,6 +8,7 @@ import tmbIconMoney from '../../assets/tmb-icon-money.svg'
 import tmbIconRocket from '../../assets/tmb-icon-rocket.svg'
 
 import { Header } from '../../components/Header'
+import { TmbCheck } from '../../components/TmbCheck'
 
 export const Home = () => {
   return (
@@ -78,31 +79,74 @@ export const Home = () => {
       </section>
       <section className="mt-8 mb-36">
         <div className="max-w-96 lg:max-w-screen-lg px-4 mx-auto flex flex-col gap-12 lg:gap-28">
-          <h2 className='text-left text-2xl lg:text-3xl'>O que tem mais com a <br /> TMB?</h2>
+          <h2 className="text-left text-2xl lg:text-3xl">
+            O que tem mais com a <br /> TMB?
+          </h2>
           <div className="flex flex-col lg:flex-row gap-12">
-            <div className='flex flex-col gap-4 items-start'>
-              <img src={tmbIconLaptop} alt="Icone de laptop" className='lg:mx-auto'/>
-              <h3 className='text-2xl'>MAIS ACESSO</h3>
+            <div className="flex flex-col gap-4 items-start">
+              <img
+                src={tmbIconLaptop}
+                alt="Icone de laptop"
+                className="lg:mx-auto"
+              />
+              <h3 className="text-2xl">MAIS ACESSO</h3>
               <p className="opacity-50 leading-7">
                 Não poder acessar algo que pode mudar o rumo de nossas vidas é
                 muito frustrante. Por isso a TMB oferece crédito para quem
                 aposta no digital para se reinventar e crescer.
               </p>
             </div>
-            <div className='flex flex-col gap-4 items-start'>
-              <img src={tmbIconMoney} alt="Icone de dinheiro" className='lg:mx-auto' />
-              <h3 className='text-2xl'>MAIS RESULTADO</h3>
+            <div className="flex flex-col gap-4 items-start">
+              <img
+                src={tmbIconMoney}
+                alt="Icone de dinheiro"
+                className="lg:mx-auto"
+              />
+              <h3 className="text-2xl">MAIS RESULTADO</h3>
               <p className="opacity-50 leading-7">
-              Todo negócio que se preze visa o máximo de retorno. E que tal dobrar o faturamento de seus lançamentos e infoprodutos fazendo uso do boleto? Então conte com a gente!
+                Todo negócio que se preze visa o máximo de retorno. E que tal
+                dobrar o faturamento de seus lançamentos e infoprodutos fazendo
+                uso do boleto? Então conte com a gente!
               </p>
             </div>
-            <div className='flex flex-col gap-4 items-start'>
-              <img src={tmbIconRocket} alt="Icone de foguete" className='lg:mx-auto' />
-              <h3 className='text-2xl'>MAIS AGILIDADE</h3>
+            <div className="flex flex-col gap-4 items-start">
+              <img
+                src={tmbIconRocket}
+                alt="Icone de foguete"
+                className="lg:mx-auto"
+              />
+              <h3 className="text-2xl">MAIS AGILIDADE</h3>
               <p className="opacity-50 leading-7">
-              Dentro da nossa plataforma, você tem autonomia para criar ofertas e realizar diversos processos. Dessa forma, você ganha agilidade dentro do seu próprio processo.
+                Dentro da nossa plataforma, você tem autonomia para criar
+                ofertas e realizar diversos processos. Dessa forma, você ganha
+                agilidade dentro do seu próprio processo.
               </p>
             </div>
+          </div>
+        </div>
+      </section>
+      <section className="bg-tmb-black text-tmb-white">
+        <div className="max-w-96 lg:max-w-screen-lg mx-auto flex flex-col gap-8 lg:gap-36 py-20 lg:py-32 px-4 lg:flex-row lg:items-center">
+          <div className="lg:max-w-[520px]">
+            <h2 className="text-3xl mb-6">
+              A gente cuida de toda burocracia para você ter tempo de
+              <span className="text-tmb-light-blue"> produzir mais</span>
+            </h2>
+            <p className="leading-7 lg:pr-16">
+              Você não precisa se preocupar com os processos chatos. A TMB faz
+              todo o procedimento de análise dos clientes para que tenhamos mais
+              segurança, assim como toda a gestão de pagamentos. Dessa forma,
+              você pode direcionar a sua atenção para outros assuntos, mas
+              sempre terá controle sobre seus projetos por meio da nossa
+              plataforma.
+            </p>
+          </div>
+          <div className="w-full flex flex-col gap-2">
+            <TmbCheck text="Analise do documento" />
+            <TmbCheck text="Analise anti fraude" />
+            <TmbCheck text="Criação de contrato" />
+            <TmbCheck text="Gestão de cobrança" />
+            <TmbCheck text="Antecipação de recebimento" />
           </div>
         </div>
       </section>
