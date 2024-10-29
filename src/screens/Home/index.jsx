@@ -9,6 +9,7 @@ import tmbIconRocket from '../../assets/tmb-icon-rocket.svg'
 
 import { Header } from '../../components/Header'
 import { TmbCheck } from '../../components/TmbCheck'
+import { InfluencersCarousel } from '../../components/InfluencersCarousel'
 
 export const Home = () => {
   return (
@@ -125,7 +126,7 @@ export const Home = () => {
           </div>
         </div>
       </section>
-      <section className="bg-tmb-black text-tmb-white">
+      <section className="mb-20 bg-tmb-black text-tmb-white">
         <div className="max-w-96 lg:max-w-screen-lg mx-auto flex flex-col gap-8 lg:gap-36 py-20 lg:py-32 px-4 lg:flex-row lg:items-center">
           <div className="lg:max-w-[520px]">
             <h2 className="text-3xl mb-6">
@@ -149,6 +150,7 @@ export const Home = () => {
             <TmbCheck text="Antecipação de recebimento" />
           </div>
         </div>
+        <InfluencersCarousel />
       </section>
     </Fragment>
   )
