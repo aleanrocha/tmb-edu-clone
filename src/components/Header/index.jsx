@@ -25,9 +25,9 @@ export const Header = () => {
           <div className="flex items-center justify-between gap-4">
             <img src={logoTMB} alt="Logo da TMB" className="w-20 lg:hidden" />
             <nav className="flex gap-2 opacity-80 text-sm tracking-widest lg:text-lg lg:gap-8">
-              <a href="#">Quem somos</a>
-              <a href="#">Soluções</a>
-              <a href="#">Contato</a>
+              <a href="#quem-somos">Quem somos</a>
+              <a href="#solucoes">Soluções</a>
+              <a href="https://api.whatsapp.com/send?phone=5512997761183" target='_blank'>Contato</a>
             </nav>
           </div>
         </div>

@@ -36,7 +36,11 @@ export const Home = () => {
               para faturar mais. Use o boleto parcelado e veja suas vendas
               crescerem. Clique em “saiba mais” e converse com a nossa equipe."
             />
-            <a className="bg-tmb-light-blue block text-center text-tmb-white font-bold p-4 mt-8 w-full  uppercase cursor-pointer lg:max-w-56">
+            <a
+              href="https://api.whatsapp.com/send?phone=5512997761183"
+              target="_blank"
+              className="bg-tmb-light-blue block text-center text-tmb-white font-bold p-4 mt-8 w-full  uppercase cursor-pointer lg:max-w-56"
+            >
               Saiba mais
             </a>
           </div>
@@ -45,6 +49,7 @@ export const Home = () => {
       <section
         className="bg-tmb-about-m lg:bg-none bg-no-repeat py-8 mt-10 h-112"
         style={{ backgroundPosition: '50% 0' }}
+        id="quem-somos"
       >
         <div className="max-w-96 lg:max-w-screen-lg px-4 mx-auto lg:flex items-center justify-center gap-24">
           <img
@@ -87,7 +92,7 @@ export const Home = () => {
       <section className="mt-8 mb-36">
         <div className="max-w-96 lg:max-w-screen-lg px-4 mx-auto flex flex-col gap-12 lg:gap-28">
           <h2 className="text-left text-3xl lg:text-4xl">
-            O que tem mais  <br />  com a TMB?
+            O que tem mais <br /> com a TMB?
           </h2>
           <div className="flex flex-col lg:flex-row gap-12">
             {tmbAdvantagesData &&
@@ -103,7 +108,7 @@ export const Home = () => {
           </div>
         </div>
       </section>
-      <section className="mb-20 bg-tmb-black text-tmb-white">
+      <section className="mb-20 bg-tmb-black text-tmb-white" id="solucoes">
         <div className="max-w-96 lg:max-w-screen-lg mx-auto flex flex-col gap-8 lg:gap-36 py-20 lg:py-32 px-4 lg:flex-row lg:items-center">
           <div className="lg:max-w-[520px]">
             <h2 className="text-3xl mb-6">
