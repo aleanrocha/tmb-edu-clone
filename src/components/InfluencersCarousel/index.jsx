@@ -41,7 +41,7 @@ export const InfluencersCarousel = () => {
         autoPlay={true}
         arrows={winSize.width > 768 ? false : true}
       >
-        <div className="relative">
+        <div className="relative h-full w-full">
           <img
             src={tmbInfluencerHolzer}
             alt="Felipe Holzer"
@@ -51,7 +51,7 @@ export const InfluencersCarousel = () => {
             Felipe Holzer
           </p>
         </div>
-        <div className="relative">
+        <div className="relative  h-full">
           <img
             src={tmbInfluencerWeldell}
             alt="Weldell Carvalho"
@@ -61,7 +61,7 @@ export const InfluencersCarousel = () => {
             Weldell Carvalho
           </p>
         </div>
-        <div className="relative">
+        <div className="relative h-full">
           <img
             src={tmbInfluencerRenata}
             alt="Renata Jardim"
@@ -71,7 +71,7 @@ export const InfluencersCarousel = () => {
             Renata Jardim
           </p>
         </div>
-        <div className="relative">
+        <div className="relative h-full">
           <img
             src={tmbInfluencerRodolfo}
             alt="Rodolfo mori"
@@ -81,7 +81,7 @@ export const InfluencersCarousel = () => {
             Rodolfo mori
           </p>
         </div>
-        <div className="relative">
+        <div className="relative h-full">
           <img
             src={tmbInfluencerAndressa}
             alt="Andressa Malinsk"

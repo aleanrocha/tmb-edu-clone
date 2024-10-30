@@ -2,13 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-.react-multi-carousel-item div {
+.react-multi-carousel-item {
   width: 258px !important;
   height: 400px !important;
 }
 
 @media screen and (max-width: 768px ) {
-  .react-multi-carousel-item div {
+  .react-multi-carousel-item {
     height: auto !important;
   }
 }
