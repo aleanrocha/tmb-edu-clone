@@ -20,6 +20,8 @@ export default {
         'tmb-banner-home-m': 'url("./src/assets/tmb-banner-mobile.png")',
         'tmb-banner-home': 'url("./src/assets/tmb-banner-home.png")',
         'tmb-about-m': 'url("./src/assets/tmb-about-mobile.jpg")',
+        'tmb-footer-bg': 'url("./src/assets/tmb-banner-footer.png")',
+        'tmb-footer-bg-mobile': 'url("./src/assets/tmb-banner-footer-mobile.png")',
       },
       animation: {
         'spin-slow': 'spin 3s linear',
