@@ -11,6 +11,7 @@ import tmbCodeFaq from '../../assets/tmb-logo-faq.png'
 
 import { Header } from '../../components/Header'
 import { TmbCheck } from '../../components/TmbCheck'
+import { Paragraph } from '../../components/Paragraph'
 import { InfluencersCarousel } from '../../components/InfluencersCarousel'
 import { Faq } from '../../components/Faq'
 import { Footer } from '../../components/Footer'
@@ -31,12 +32,12 @@ export const Home = () => {
               Dobre o faturamento <br /> da sua empresa como
               <span className="text-tmb-light-blue"> boleto parcelado</span>.
             </h1>
-            <p className="opacity-50 mb-8 leading-7">
-              Você não precisa investir mais em tráfego ou mudar a estratégia
+            <Paragraph
+              content="Você não precisa investir mais em tráfego ou mudar a estratégia
               para faturar mais. Use o boleto parcelado e veja suas vendas
-              crescerem. Clique em “saiba mais” e converse com a nossa equipe.
-            </p>
-            <a className="bg-tmb-light-blue block text-center text-tmb-white font-bold p-4 w-full  uppercase cursor-pointer lg:max-w-56">
+              crescerem. Clique em “saiba mais” e converse com a nossa equipe."
+            />
+            <a className="bg-tmb-light-blue block text-center text-tmb-white font-bold p-4 mt-8 w-full  uppercase cursor-pointer lg:max-w-56">
               Saiba mais
             </a>
           </div>
@@ -56,21 +57,21 @@ export const Home = () => {
             <h2 className="text-3xl tracking-wider max-w-96">
               Que tal dar mais acesso ao seu infoproduto?
             </h2>
-            <p className="opacity-50 leading-7">
-              Para ter mais resultado, tudo o que você precisar fazer é dar
+            <Paragraph
+              content="Para ter mais resultado, tudo o que você precisar fazer é dar
               oportunidade a quem precisa. Muitas pessoas gostariam de comprar o
               seu infoproduto, mas são conseguem por conta de meios de
               pagamentos engessados. No Brasil, 78% da população está endividada
-              e o limite médio do cartão de crédito é R$1.400,00.
-            </p>
-            <p className="opacity-50 leading-7">
-              Por isso, um público muito grande é deixado de lado, seja por não
+              e o limite médio do cartão de crédito é R$1.400,00."
+            />
+            <Paragraph
+              content="Por isso, um público muito grande é deixado de lado, seja por não
               ter crédito ou não poder comprometer o seu limite. Mas quando
               existe uma forma de pagamento parcelada e facilitada, você vai
               mais longe. O boleto parcelado dá oportunidade a essas pessoas que
               querem acesso ao aprendizado e traz mais faturamento para o seu
-              bolso!
-            </p>
+              bolso!"
+            />
             <img
               src={tmbCode}
               alt="Imagem de um código de barras"
@@ -97,11 +98,11 @@ export const Home = () => {
                 className="lg:mx-auto"
               />
               <h3 className="text-2xl">MAIS ACESSO</h3>
-              <p className="opacity-50 leading-7">
-                Não poder acessar algo que pode mudar o rumo de nossas vidas é
+              <Paragraph
+                content="Não poder acessar algo que pode mudar o rumo de nossas vidas é
                 muito frustrante. Por isso a TMB oferece crédito para quem
-                aposta no digital para se reinventar e crescer.
-              </p>
+                aposta no digital para se reinventar e crescer."
+              />
             </div>
             <div className="flex flex-col gap-4 items-start">
               <img
@@ -110,11 +111,11 @@ export const Home = () => {
                 className="lg:mx-auto"
               />
               <h3 className="text-2xl">MAIS RESULTADO</h3>
-              <p className="opacity-50 leading-7">
-                Todo negócio que se preze visa o máximo de retorno. E que tal
+              <Paragraph
+                content="Todo negócio que se preze visa o máximo de retorno. E que tal
                 dobrar o faturamento de seus lançamentos e infoprodutos fazendo
-                uso do boleto? Então conte com a gente!
-              </p>
+                uso do boleto? Então conte com a gente!"
+              />
             </div>
             <div className="flex flex-col gap-4 items-start">
               <img
@@ -123,11 +124,11 @@ export const Home = () => {
                 className="lg:mx-auto"
               />
               <h3 className="text-2xl">MAIS AGILIDADE</h3>
-              <p className="opacity-50 leading-7">
-                Dentro da nossa plataforma, você tem autonomia para criar
+              <Paragraph
+                content="Dentro da nossa plataforma, você tem autonomia para criar
                 ofertas e realizar diversos processos. Dessa forma, você ganha
-                agilidade dentro do seu próprio processo.
-              </p>
+                agilidade dentro do seu próprio processo."
+              />
             </div>
           </div>
         </div>
