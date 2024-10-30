@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 import tmbLogoBlue from '../../assets/tmb-logo-blue.jpg'
 import { InputGlobal, InputSubmit } from '../../components/InputsForm'
 
@@ -6,11 +8,13 @@ export const ForgotPassword = () => {
     <main className="bg-tmb-bg w-full min-h-screen flex justify-center items-center">
       <section className="w-full max-w-[420px] p-6 flex flex-col items-center md:max-w-screen-lg md:flex-row md:justify-around md:gap-4">
         <div className="w-full max-w-96">
+          <Link to={'/'} className='inline-block'>
           <img
             src={tmbLogoBlue}
             alt="Logo azul da TMB"
             className="block mx-auto w-28 mb-4 lg:mx-0 md:w-32 md:py-2"
           />
+          </Link>
           <div className="flex flex-col gap-2 md:gap-4">
             <h1 className="text-xl font-bold tracking-wider md:text-3xl">
               Recuperar Senha
