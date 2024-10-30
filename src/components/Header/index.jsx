@@ -1,3 +1,4 @@
+import { LuUserCircle2 } from 'react-icons/lu'
 import logoTMB from '../../assets/tmb-logo-dark.png'
 
 export const Header = () => {
@@ -9,13 +10,14 @@ export const Header = () => {
           <div className="flex gap-1 lg:gap-8">
             <a
               href="#"
-              className="bg-tmb-black text-tmb-white flex justify-end items-center w-32 py-1 px-4 text-sm lg:justify-center lg:py-2"
+              className="bg-tmb-black text-tmb-white flex justify-center items-center gap-2 w-32 p1 text-sm"
             >
-              Login
+              <LuUserCircle2 size={21} />
+              <span>Login</span>
             </a>
             <a
               href="#"
-              className="bg-tmb-white text-tmb-black flex justify-center items-center w-32 py-1 px-4 lg:py-2 text-sm border-2 border-tmb-black border-opacity-50 "
+              className="bg-tmb-white text-tmb-black flex justify-center items-center p-1 w-32 text-sm border-2 border-tmb-black border-opacity-50 "
             >
               Produtor
             </a>
