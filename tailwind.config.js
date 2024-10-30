@@ -21,6 +21,9 @@ export default {
         'tmb-banner-home': 'url("./src/assets/tmb-banner-home.png")',
         'tmb-about-m': 'url("./src/assets/tmb-about-mobile.jpg")',
       },
+      animation: {
+        'spin-slow': 'spin 3s linear',
+      }
     },
   },
   plugins: [],

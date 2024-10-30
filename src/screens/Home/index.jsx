@@ -6,10 +6,14 @@ import tmbSuperCode from '../../assets/tmb-super-code.png'
 import tmbIconLaptop from '../../assets/tmb-icon-laptop.svg'
 import tmbIconMoney from '../../assets/tmb-icon-money.svg'
 import tmbIconRocket from '../../assets/tmb-icon-rocket.svg'
+import tmbCodeFaqMobile from '../../assets/tmb-code-faq-mobile.png'
+import tmbCodeFaq from '../../assets/tmb-logo-faq.png'
 
 import { Header } from '../../components/Header'
 import { TmbCheck } from '../../components/TmbCheck'
 import { InfluencersCarousel } from '../../components/InfluencersCarousel'
+import { Faq } from '../../components/Faq'
+import { faq as faqData } from '../../data/faq'
 
 export const Home = () => {
   return (
@@ -151,6 +155,32 @@ export const Home = () => {
           </div>
         </div>
         <InfluencersCarousel />
+      </section>
+      <section>
+        <div className="max-w-96 lg:max-w-screen-lg mx-auto flex flex-col gap-8 py-8 px-4">
+          <div className='mb-16'>
+            <img src={tmbCodeFaqMobile} alt="Imagem código de barras mobile" className='lg:hidden' />
+            <img src={tmbCodeFaq} alt="Imagem código de barras desktop" className='hidden lg:block' />
+          </div>
+          <section className="flex flex-col gap-12 p-4 w-full">
+            <div>
+              <h2 className="text-3xl text-center uppercase mb-6 lg:text-4xl">Faq</h2>
+              <p className="text-center text-md text-tmb-light-blue">
+                Perguntas frequentes
+              </p>
+            </div>
+            <div>
+              {faqData &&
+                faqData.map((faq) => (
+                  <Faq
+                    key={faq.id}
+                    title={faq.title}
+                    description={faq.description}
+                  />
+                ))}
+            </div>
+          </section>
+        </div>
       </section>
     </Fragment>
   )
