@@ -3,20 +3,19 @@ import { Fragment } from 'react'
 import tmbAboutDesktop from '../../assets/tmb-about.png'
 import tmbCode from '../../assets/tmb-code-about.png'
 import tmbSuperCode from '../../assets/tmb-super-code.png'
-import tmbIconLaptop from '../../assets/tmb-icon-laptop.svg'
-import tmbIconMoney from '../../assets/tmb-icon-money.svg'
-import tmbIconRocket from '../../assets/tmb-icon-rocket.svg'
 import tmbCodeFaqMobile from '../../assets/tmb-code-faq-mobile.png'
 import tmbCodeFaq from '../../assets/tmb-logo-faq.png'
 
 import { Header } from '../../components/Header'
 import { TmbCheck } from '../../components/TmbCheck'
 import { Paragraph } from '../../components/Paragraph'
+import { TmbAdvantages } from '../../components/TmbAdvantages'
 import { InfluencersCarousel } from '../../components/InfluencersCarousel'
 import { Faq } from '../../components/Faq'
 import { Footer } from '../../components/Footer'
 
 import { faq as faqData } from '../../data/faq'
+import { tmbAdvantages as tmbAdvantagesData } from '../../data/tmbAdvantages'
 
 export const Home = () => {
   return (
@@ -87,49 +86,20 @@ export const Home = () => {
       </section>
       <section className="mt-8 mb-36">
         <div className="max-w-96 lg:max-w-screen-lg px-4 mx-auto flex flex-col gap-12 lg:gap-28">
-          <h2 className="text-left text-2xl lg:text-3xl">
-            O que tem mais com a <br /> TMB?
+          <h2 className="text-left text-3xl lg:text-4xl">
+            O que tem mais  <br />  com a TMB?
           </h2>
           <div className="flex flex-col lg:flex-row gap-12">
-            <div className="flex flex-col gap-4 items-start">
-              <img
-                src={tmbIconLaptop}
-                alt="Icone de laptop"
-                className="lg:mx-auto"
-              />
-              <h3 className="text-2xl">MAIS ACESSO</h3>
-              <Paragraph
-                content="Não poder acessar algo que pode mudar o rumo de nossas vidas é
-                muito frustrante. Por isso a TMB oferece crédito para quem
-                aposta no digital para se reinventar e crescer."
-              />
-            </div>
-            <div className="flex flex-col gap-4 items-start">
-              <img
-                src={tmbIconMoney}
-                alt="Icone de dinheiro"
-                className="lg:mx-auto"
-              />
-              <h3 className="text-2xl">MAIS RESULTADO</h3>
-              <Paragraph
-                content="Todo negócio que se preze visa o máximo de retorno. E que tal
-                dobrar o faturamento de seus lançamentos e infoprodutos fazendo
-                uso do boleto? Então conte com a gente!"
-              />
-            </div>
-            <div className="flex flex-col gap-4 items-start">
-              <img
-                src={tmbIconRocket}
-                alt="Icone de foguete"
-                className="lg:mx-auto"
-              />
-              <h3 className="text-2xl">MAIS AGILIDADE</h3>
-              <Paragraph
-                content="Dentro da nossa plataforma, você tem autonomia para criar
-                ofertas e realizar diversos processos. Dessa forma, você ganha
-                agilidade dentro do seu próprio processo."
-              />
-            </div>
+            {tmbAdvantagesData &&
+              tmbAdvantagesData.map((advantage) => (
+                <TmbAdvantages
+                  key={advantage.id}
+                  img={advantage.image}
+                  alt={advantage.imageAlt}
+                  title={advantage.title}
+                  content={advantage.description}
+                />
+              ))}
           </div>
         </div>
       </section>
