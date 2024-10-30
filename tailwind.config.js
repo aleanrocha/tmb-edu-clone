@@ -22,6 +22,7 @@ export default {
         'tmb-about-m': 'url("./src/assets/tmb-about-mobile.jpg")',
         'tmb-footer-bg': 'url("./src/assets/tmb-banner-footer.png")',
         'tmb-footer-bg-mobile': 'url("./src/assets/tmb-banner-footer-mobile.png")',
+        'tmb-gradient-btn': 'linear-gradient(to right, #55baff, #33cccc)'
       },
       animation: {
         'spin-slow': 'spin 3s linear',
