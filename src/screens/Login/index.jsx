@@ -1,4 +1,8 @@
+import { Link } from 'react-router-dom'
+
 import tmbLogoBlue from '../../assets/tmb-logo-blue.jpg'
+import { InputGlobal, InputSubmit } from '../../components/InputsForm'
+
 export const Login = () => {
   return (
     <main className="bg-tmb-bg w-full min-h-screen flex justify-center items-center">
@@ -19,9 +23,9 @@ export const Login = () => {
             <p className="text-sm opacity-65">
               Caso seja novo aqui, você recebeu um acesso por e-mail e caso não
               tenha encontrado,{' '}
-              <a href="#" className="text-blue-600 underline font-semibold">
+              <Link to={'/recuperarSenha'} className="text-blue-600 underline font-semibold">
                 clique aqui
-              </a>{' '}
+              </Link>{' '}
               para receber uma nova senha.
             </p>
           </div>
@@ -29,29 +33,15 @@ export const Login = () => {
         <div className="bg-tmb-white w-full p-8 mt-8 rounded-lg shadow-2xl md:mt-0 md:max-w-[409px]">
           <h3 className="text-2xl text-center mb-8">Acesso ao Portal</h3>
           <form className="flex flex-col gap-6">
-            <input
-              type="text"
-              placeholder="CPF"
-              required
-              className="py-3 px-4 border-none outline-2 outline-zinc-200 rounded-md outline-none focus:outline-4 focus:outline-tmb-highlight focus:opacity-60"
-            />
-            <input
-              type="text"
-              placeholder="Senha"
-              required
-              className="py-3 px-4 border-none outline-2 outline-zinc-200 rounded-md outline-none focus:outline-4 focus:outline-tmb-highlight focus:opacity-60"
-            />
-            <input
-              type="submit"
-              value="Entrar"
-              className="bg-tmb-gradient-btn text-tmb-white p-4 border-none border-2 border-zinc-200 rounded-full outline-none cursor-pointer"
-            />
+            <InputGlobal inputType="text" inputPlaceholder="CPF" />
+            <InputGlobal inputType="password" inputPlaceholder="Senha" />
+            <InputSubmit inputType="submit" inputValue="Entrar" />
           </form>
           <p className="text-center opacity-80 mt-6">
             Esqueceu a senha?{' '}
-            <a href="#" className="text-blue-600 underline">
+            <Link to={'/recuperarSenha'} className="text-blue-600 underline">
               Clique aqui
-            </a>
+            </Link>
           </p>
         </div>
       </section>
