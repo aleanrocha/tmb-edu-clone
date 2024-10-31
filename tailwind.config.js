@@ -17,12 +17,11 @@ export default {
         'tmb-dark-overlay': 'rgba(0, 0, 0, 0.7)',
       },
       backgroundImage: {
-        'tmb-banner-home-m': 'url("./src/assets/tmb-banner-mobile.png")',
-        'tmb-banner-home': 'url("./src/assets/tmb-banner-home.png")',
-        'tmb-about-m': 'url("./src/assets/tmb-about-mobile.jpg")',
-        'tmb-footer-bg': 'url("./src/assets/tmb-banner-footer.png")',
-        'tmb-footer-bg-mobile': 'url("./src/assets/tmb-banner-footer-mobile.png")',
-        'tmb-mulher': 'url("./src/assets/tmb-mulher-compress.jpg")',
+        'tmb-banner-home-m': 'url("/images/tmb-banner-mobile.png")',
+        'tmb-banner-home': 'url("/images/tmb-banner-home.png")',
+        'tmb-footer-bg': 'url("/images/tmb-banner-footer.png")',
+        'tmb-footer-bg-mobile': 'url("/images/tmb-banner-footer-mobile.png")',
+        'tmb-mulher': 'url("./images/tmb-mulher-compress.jpg")',
         'tmb-gradient-btn': 'linear-gradient(to right, #55baff, #33cccc)'
       },
       animation: {
