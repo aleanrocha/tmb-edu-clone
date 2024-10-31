@@ -20,7 +20,7 @@ export const Producer = () => {
               <img src={tmbLogoLight} alt="Logo da TMB" className="mt-8" />
             </Link>
             <h1 className="text-3xl font-medium">Seja bem-vindo!</h1>
-            <p className="text-sm font-light mb-4">
+            <p className="text-sm font-light mb-4 text-center">
               Insira seus dados abaixo para acessar o portal do infoprodutor:
             </p>
             <form className="w-full max-w-96">
@@ -40,7 +40,11 @@ export const Producer = () => {
               </div>
               <p className="py-2 text-sm text-right font-light">
                 Não tem conta?{' '}
-                <a href="#" className="font-semibold">
+                <a
+                  href="#"
+                  className="font-semibold"
+                  onClick={() => alert('Puts, não fiz! 😅')}
+                >
                   Click aqui.
                 </a>{' '}
               </p>
@@ -54,6 +58,7 @@ export const Producer = () => {
               <a
                 href="#"
                 className="text-sm font-light block text-center my-6 transition hover:scale-105 hover:font-normal"
+                onClick={() => alert('Puts, não fiz! 😅')}
               >
                 Esqueceu a senha?
               </a>

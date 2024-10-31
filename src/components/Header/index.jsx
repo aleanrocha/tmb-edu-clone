@@ -8,7 +8,7 @@ export const Header = () => {
     <header className="flex justify-center py-4">
       <section className="flex justify-center lg:justify-between w-full">
         <img src={logoTMB} alt="Logo da TMB" className="hidden lg:block" />
-        <div className="flex flex-col items-center gap-2 lg:flex-row-reverse lg:gap-8">
+        <div className="w-full flex flex-col items-center gap-2 lg:flex-row-reverse lg:gap-8">
           <div className="flex gap-1 lg:gap-8">
             <Link
               to={'/login'}
@@ -24,9 +24,9 @@ export const Header = () => {
               Produtor
             </Link>
           </div>
-          <div className="flex items-center justify-between gap-4">
+          <div className="flex items-center justify-between gap-4 w-full">
             <img src={logoTMB} alt="Logo da TMB" className="w-20 lg:hidden" />
-            <nav className="flex gap-2 opacity-80 text-sm tracking-widest lg:text-lg lg:gap-8">
+            <nav className="flex gap-2 opacity-80 text-[0.78rem] tracking-widest lg:text-lg lg:gap-8">
               <a href="#quem-somos">Quem somos</a>
               <a href="#solucoes">Soluções</a>
               <a
