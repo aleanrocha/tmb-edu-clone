@@ -5,10 +5,10 @@ import logoTMB from '../../assets/tmb-logo-dark.png'
 
 export const Header = () => {
   return (
-    <header className="flex justify-center py-4">
-      <section className="flex justify-center lg:justify-between w-full">
+    <header className="flex py-4 lg:justify-between">
+      <section className="flex justify-between w-full">
         <img src={logoTMB} alt="Logo da TMB" className="hidden lg:block" />
-        <div className="w-full flex flex-col items-center gap-2 lg:flex-row-reverse lg:gap-8">
+        <div className="w-full flex flex-col items-center gap-2 lg:flex-row-reverse lg:gap-8 lg:w-auto">
           <div className="flex gap-1 lg:gap-8">
             <Link
               to={'/login'}
