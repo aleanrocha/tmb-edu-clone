@@ -19,6 +19,7 @@ export default {
       backgroundImage: {
         'tmb-banner-home-m': 'url("/images/tmb-banner-mobile.png")',
         'tmb-banner-home': 'url("/images/tmb-banner-home.png")',
+        'tmb-about-m': 'url("/images/tmb-about-mobile.jpg")',
         'tmb-footer-bg': 'url("/images/tmb-banner-footer.png")',
         'tmb-footer-bg-mobile': 'url("/images/tmb-banner-footer-mobile.png")',
         'tmb-mulher': 'url("/images/tmb-mulher-compress.jpg")',
