@@ -29,6 +29,14 @@ export const InfluencersCarousel = () => {
     window.addEventListener('resize', handleSize)
     return () => window.removeEventListener('resize', handleSize)
   }, [])
+
+  const imagesData = [
+    { src: tmbInfluencerHolzer, alt: 'Felipe Holzer' },
+    { src: tmbInfluencerWeldell, alt: 'Weldell Carvalho' },
+    { src: tmbInfluencerRenata, alt: 'Renata Jardim' },
+    { src: tmbInfluencerRodolfo, alt: 'Rodolfo Mori' },
+    { src: tmbInfluencerAndressa, alt: 'Andressa Malinsk' },
+  ]
   return (
     <div className="max-w-screen-xl mx-auto">
       <h2 className="text-center text-3xl max-w-80 p-8 mx-auto lg:max-w-none md:text-4xl">
@@ -37,60 +45,23 @@ export const InfluencersCarousel = () => {
       <Carousel
         responsive={responsive}
         infinite={true}
-        partialVisbile={false}
+        partialVisibile={false}
         autoPlay={true}
         arrows={winSize.width > 768 ? false : true}
       >
-        <div className="relative h-full w-full">
-          <img
-            src={tmbInfluencerHolzer}
-            alt="Felipe Holzer"
-            className="h-full object-cover"
-          />
-          <p className="absolute inset-0 flex items-center justify-center text-2xl tracking-wider opacity-0 hover:bg-tmb-dark-overlay hover:opacity-100">
-            Felipe Holzer
-          </p>
-        </div>
-        <div className="relative  h-full">
-          <img
-            src={tmbInfluencerWeldell}
-            alt="Weldell Carvalho"
-            className="h-full object-cover"
-          />
-          <p className="absolute inset-0 flex items-center justify-center text-2xl tracking-wider opacity-0 hover:bg-tmb-dark-overlay hover:opacity-100">
-            Weldell Carvalho
-          </p>
-        </div>
-        <div className="relative h-full">
-          <img
-            src={tmbInfluencerRenata}
-            alt="Renata Jardim"
-            className="h-full object-cover"
-          />
-          <p className="absolute inset-0 flex items-center justify-center text-2xl tracking-wider opacity-0 hover:bg-tmb-dark-overlay hover:opacity-100">
-            Renata Jardim
-          </p>
-        </div>
-        <div className="relative h-full">
-          <img
-            src={tmbInfluencerRodolfo}
-            alt="Rodolfo mori"
-            className="h-full object-cover"
-          />
-          <p className="absolute inset-0 flex items-center justify-center text-2xl tracking-wide opacity-0 hover:bg-tmb-dark-overlay hover:opacity-100">
-            Rodolfo mori
-          </p>
-        </div>
-        <div className="relative h-full">
-          <img
-            src={tmbInfluencerAndressa}
-            alt="Andressa Malinsk"
-            className="h-full object-cover"
-          />
-          <p className="absolute inset-0 flex items-center justify-center text-2xl tracking-wide opacity-0 hover:bg-tmb-dark-overlay hover:opacity-100">
-            Andressa Malinsk
-          </p>
-        </div>
+        {imagesData &&
+          imagesData.map((image, index) => (
+            <div key={index} className="relative h-full w-full">
+              <img
+                src={image.src}
+                alt={image.alt}
+                className="h-full object-cover"
+              />
+              <p className="absolute inset-0 flex items-center justify-center text-2xl tracking-wider opacity-0 hover:bg-tmb-dark-overlay hover:opacity-100">
+                {image.alt}
+              </p>
+            </div>
+          ))}
       </Carousel>
     </div>
   )
