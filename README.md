@@ -1,8 +1,50 @@
-# React + Vite
+# Clone Modesto da TMB Educação
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este é um projeto que consiste em um clone modesto da plataforma **TMB Educação**, desenvolvido com **React.js** e **Tailwind CSS**. O objetivo é proporcionar uma experiência de aprendizado interativa e visualmente atraente, utilizando as melhores práticas de desenvolvimento web.
 
-Currently, two official plugins are available:
+![tmb-educacao](https://github.com/user-attachments/assets/5c70551a-6782-4af9-8462-72d3545a9cd5)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tecnologias 🚀
+
+- ✅ React.js: Biblioteca JavaScript para construir interfaces de usuário.
+
+- ✅ Tailwind CSS: Framework CSS para estilização rápida e responsiva.
+
+## Funcionalidades 📋
+
+- ✅ Navegação intuitiva
+- ✅ Layout responsivo
+- ✅ Estilização moderna e clean
+- ✅ Componentes reutilizáveis
+
+## Executar o Projeto 🛠️
+
+1. **Clone o repositório**
+     ```bash
+     git clone https://github.com/aleanrocha/tmb-edu-clone.git
+     ```
+
+2. **Navegue até o diretório do projeto**
+     ```bash
+     cd tmb-edu-clone
+     ```
+
+3. **Instale as dependências**
+     ```bash
+     npm install
+     ```
+
+4. **Inicie o servidor de desenvolvimento**
+     ```bash
+     npm run dev
+     ```
+
+5. **Abra no navegador**
+   - Após o servidor iniciar, abra seu navegador e acesse: 
+
+***Obrigado por visitar este projeto! Espero que tenha gostado!***
+
+## Licença ⚠️
+
+Esse projeto está sob a licença **MIT**.
+
