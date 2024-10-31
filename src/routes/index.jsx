@@ -3,6 +3,7 @@ import { createBrowserRouter } from 'react-router-dom'
 import { Home } from '../screens/Home'
 import { Login } from '../screens/Login'
 import { ForgotPassword } from '../screens/ForgotPassword'
+import { Producer } from '../screens/Producer'
 
 export const router = createBrowserRouter([
   {
@@ -16,5 +17,9 @@ export const router = createBrowserRouter([
   {
     path: '/recuperarSenha',
     element: <ForgotPassword />
+  },
+  {
+    path: '/produtor',
+    element: <Producer />
   }
 ])

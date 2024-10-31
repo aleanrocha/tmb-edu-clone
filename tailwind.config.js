@@ -22,10 +22,15 @@ export default {
         'tmb-about-m': 'url("./src/assets/tmb-about-mobile.jpg")',
         'tmb-footer-bg': 'url("./src/assets/tmb-banner-footer.png")',
         'tmb-footer-bg-mobile': 'url("./src/assets/tmb-banner-footer-mobile.png")',
+        'tmb-mulher': 'url("./src/assets/tmb-mulher-compress.jpg")',
         'tmb-gradient-btn': 'linear-gradient(to right, #55baff, #33cccc)'
       },
       animation: {
         'spin-slow': 'spin 3s linear',
+      },
+      boxShadow: {
+        'sh-producer-mobile': 'rgba(0, 0, 0, 0.8) 0px -90px 5px -18px inset',
+        'sh-producer-desktop': '0px -21px 107px 38px rgba(0,0,0,1) inset'
       }
     },
   },
