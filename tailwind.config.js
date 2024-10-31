@@ -21,7 +21,7 @@ export default {
         'tmb-banner-home': 'url("/images/tmb-banner-home.png")',
         'tmb-footer-bg': 'url("/images/tmb-banner-footer.png")',
         'tmb-footer-bg-mobile': 'url("/images/tmb-banner-footer-mobile.png")',
-        'tmb-mulher': 'url("./images/tmb-mulher-compress.jpg")',
+        'tmb-mulher': 'url("/images/tmb-mulher-compress.jpg")',
         'tmb-gradient-btn': 'linear-gradient(to right, #55baff, #33cccc)'
       },
       animation: {
